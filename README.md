@@ -9,5 +9,17 @@ The tenant piece should be fairly straight forward.  A user will belong to one o
 
 RBAC put shortly is just a check to see if a user can perform an action granted through participation in a role.  Such as a particular "customer rep" (user) "can update a customers phone number" (FunctionalAbility) because they are a member of "Customer Admins" (role).
 
-A lot of the heavy lifting will be done via the membership provider.
+A lot of the heavy lifting will be done via the universal membership provider aka a Dumb Wrapper
 
+API
+
+- CreateTenant
+- DeleteTenant
+- CreateUser
+- DeleteUser
+- CreateTenantRole
+- DeleteTenantRole
+- AddUserToRole
+- AddUsersToRoles
+- RemoveUserFromRole
+- RemoveUsersFromRoles
